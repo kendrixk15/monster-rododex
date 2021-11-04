@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Red Hat Display';
+    text-decoration: none;
+}
+
+body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: hsl(225, 100%, 94%);
+    
+}
+
+#whole-container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 40%;
+    margin-top: 10%;
+    overflow: ;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+}
+
+#postcard{
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    max-width: 50%;
+    min-width: 20%;
+}
+
+#card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 50%;
+    min-width: 20%;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    height: 400px;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+#plan-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+}
+#plan-container h4{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+#plan-container p{
+    font-size: 14px;
+}
+#plan-box{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    margin-left: 40px;
+    padding: 15px;
+    border-radius:20px ;
+}
+#plan-box img{
+    width: 50%;
+    height: 100%;
+    margin-right: 15px;
+}
+
+#plan-msg-box{
+    display: flex;
+}
+
+/*pprocess*/
+#process {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 10px;
+    background-color: hsl(245, 75%, 52%);
+    margin: 20px;
+    margin-left: 40px;
+    padding: 20px;
+    border-radius:20px ;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px hsl(245, 75%, 52%);
+    
+}
+
+#process a {
+    color:hsl(225, 100%, 98%) ;
+}
+
+#process a:hover {
+    color:hsl(225, 100%, 94%) ;
+}
+
+#cancel{
+    margin-bottom: 10px;
+}
+
+/*font decoration*/
+p {
+    color:hsl(224, 23%, 55%)
+}
+
+
+#message h2{
+    font-size: 24px;
+    margin: 5px 0;
+    color:hsl(223, 47%, 23%)
+}
+
+#plan-box a{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+#plan-box a:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+#cancel a{
+    margin-bottom: 10px;
+    color:hsl(224, 23%, 55%)
+}
+
+#cancel a:hover{
+    color: hsl(245, 75%, 52%);
+}
