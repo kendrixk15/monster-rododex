@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+}
+body {
+    background-image: url(xmas.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    line-height: 15px;
+}
+
+#tick{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+#clock-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    font-size: 24px;
+    border-radius: 15px;
+    width:80% ;
+    padding-bottom: 20px;
+    height: 70px;
+}
+
+#head-line {
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+h1{
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 52px;
+    font-weight: 700;
+    margin: 15px;
+    padding-top: 15px;
+}
+.space {
+    font-size: 15px;
+}
