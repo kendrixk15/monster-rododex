@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/monster-rododex/static/css/main.f3d4244e.css",
+    "main.js": "/monster-rododex/static/js/main.b38bce44.js",
+    "static/js/787.8a3ee68a.chunk.js": "/monster-rododex/static/js/787.8a3ee68a.chunk.js",
+    "index.html": "/monster-rododex/index.html",
+    "main.f3d4244e.css.map": "/monster-rododex/static/css/main.f3d4244e.css.map",
+    "main.b38bce44.js.map": "/monster-rododex/static/js/main.b38bce44.js.map",
+    "787.8a3ee68a.chunk.js.map": "/monster-rododex/static/js/787.8a3ee68a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3d4244e.css",
+    "static/js/main.b38bce44.js"
+  ]
+}
