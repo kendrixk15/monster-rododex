@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Passcard</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="#"><img src="asset/icon/logo.png" class="logo-img"></a>
+            <p> <span class="job">Job</span> Passcard</p>
+        </section>
+        <section class="nav-menu">
+            <a href="#">ABOUT US</a>
+            <a href="#">PASSCARD</a>
+            <a href="#">PROFILE</a>
+        </section>
+        <section class="search-member">
+            <div class="search-cart-container">
+                <a  href="#"><img src="asset/icon/search.png" class="icon-smaller"></a>
+                <div class="cart-icon-container">
+                    <a  href="#"><img src="asset/icon/cart-icon.png" class="icon-small"></a>
+                    <p class="current-item">2</p>
+                </div>
+            </div>
+            <div class="member-box">
+                <a  href="#">LOGIN</a>
+                <div class="vl"></div>
+                <a  href="#">SIGN UP</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="cart-title">My Cart</div>
+        <section class="main-cart-container">
+            <div class="left-cart-container">
+                <div>
+                    <div class="cart-box">
+                    <img src="asset/icon/delete-btn.png" class="del-icon">
+                    <div class="item-container" style="background-image: url(asset/image/bg-blue.png)">
+                        <img src="asset/icon/file-icon-blue.png" class="file-icon">
+                        <h5>Google Docs</h5>
+                        <p>Used for business</p>
+                        <!-- <img src="asset/image/bg-blue.png"> -->
+                    </div>
+                    <div class="item-details">
+                        <h5 class="item-title">Google Docs</h5>
+                        <div class="custom-select">
+                            <div id="one" class="show">
+                                <div class="dot-green"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div id="two" class="hide">
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div id="three" class="hide">
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                            </div>
+                            <select id="my-select" onchange="showNum()">
+                                <option value="0" onclick="changeDot(0)">LV 1-3</option>
+                                <option value="1" onclick="changeDot(1)">LV 1-3</option>
+                                <option value="2" onclick="changeDot(2)">LV 2-3</option>
+                                <option value="3" onclick="changeDot(3)">LV 3-3</option>
+                            </select>
+
+                            <!-- <div class="container">
+                                <div class="select-box">
+                                  <div class="options-container">
+                                    <div class="option" onclick="changeDot(1)">
+                                      <input type="radio" class="radio" id="lv-one"/>
+                                      <label for="lv-one" onclick="showNum()">LV 1-3</label>
+                                    </div>
+                          
+                                    <div class="option" onclick="changeDot(2)">
+                                      <input type="radio" class="radio" id="lv-two"/>
+                                      <label for="lv-two">LV 2-3</label>
+                                    </div>
+                          
+                                    <div class="option" onclick="changeDot(5)">
+                                      <input type="radio" class="radio" id="lv-three"/>
+                                      <label for="lv-three">LV 3-3</label>
+                                    </div>
+                          
+                                    <div class="option">
+                                      <input type="radio" class="radio" id="art" name="category" />
+                                      <label for="art">Art</label>
+                                    </div>
+                                  </div>
+                          
+                                  <div class="selected" >
+                                    LV 1-3
+                                  </div>
+                                </div> -->
+                              <!-- </div> -->
+                        </div>
+                        <div class="price" id="price">THB 150</div>
+                    </div>
+                </div>
+
+                
+                <div class="cart-box">
+                    <img src="asset/icon/delete-btn.png" class="del-icon">
+                    <div class="item-container" style="background-image: url(asset/image/bg-orange.png)">
+                        <img src="asset/icon/file-orange.png" class="file-icon">
+                        <h5>Google Slide</h5>
+                        <p>Used for business</p>
+                        <!-- <img src="asset/image/bg-blue.png"> -->
+                    </div>
+                    <div class="item-details">
+                        <h5 class="item-title">Google Slide</h5>
+                        <div class="level-select">
+                            <div id="one-2" class="show">
+                                <div class="dot-green"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div id="two-2" class="hide">
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+
+                            </div>
+                            <div id="three-2" class="hide">
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div id="four-2" class="hide">
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                                <div class="dot-green"></div>
+                            </div>
+                            <div class="select">
+                                <select class ="select-box-2" id="my-select2" onchange="showNum2()">
+                                    <option class="opt" value="4">LV 1/4</option>
+                                    <option value="5">LV 2/4</option>
+                                    <option value="6">LV 3/4</option>
+                                    <option value="7">LV 4/4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="price">THB 150</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- right side -->
+            <div class="right-cart-container">
+                <h4 class="section-title">Order Info</h4>
+                <div class="sub-price">
+                    <p>Subtotal</p>
+                    <p>THB 300</p>
+                </div>
+                <div class="promo-code">
+                    <img src="asset/icon/cupon-icon.png" style="display: inline-block;">
+                    <input type="text" placeholder="Promotion Code" id="code">
+                    <button onclick="applyCode()">APPLY</button>
+                </div>
+                <hr>
+                <div class="total-pay">
+                    <p class="total-text">Total payment </p>
+                    <p class="total-price">THB 300</p>
+                </div>
+                <button class="final-button">LOG IN TO CHECKOUT</button>
+            </div>
+        </section>
+    </main>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    body{
+        background-color: rgb(240, 240, 240);
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        height: 72px;
+        align-items: center;
+    }
+    section{
+        display: flex;
+    }
+    .member-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 8px;
+    }
+    .member-box>a{
+        margin: 0 8px;
+        text-decoration: none;
+        color: #000;
+    }
+    .vl {
+        border-left: 1px solid lightgrey;
+        height: 32px;
+        opacity: 0.75;
+        border-radius: 2px;
+    }
+    /*logo*/
+    .logo{
+        display: flex;
+        margin-left: 172px;
+        /* margin-top: 8px; */
+    }
+    .logo>p{
+        font-size: 24px;
+        margin: 0;
+        color: #000;
+    }
+    .job{
+        font-weight: 900;
+        /* margin-right: -1; */
+    }
+    .logo-img{
+        width: 38px;
+        height: 24px;
+    }
+
+    /*nav menu*/
+    .nav-menu>a{
+        text-decoration: none;
+        color: #000;
+        margin: 0 16px;
+        font-weight: 700;
+    }
+    /*search and member*/
+    .search-member{
+        display: flex;
+        margin-right: 172px;
+    }
+
+    .search-cart-container{
+        display: flex;
+        align-items: center;
+    }
+    .icon-small{
+        width: 28px;
+        height: 28px;
+        margin: 0 16px;
+    }
+    .icon-smaller{
+        width: 20px;
+        height: 20px;
+        margin: 0 16px;
+    }
+    .icon-small:hover,  .icon-smaller:hover{
+        cursor: pointer;
+        /* box-shadow: 0px 0px 5px lightgrey; */
+    }
+
+    .cart-icon-container{
+        display: flex;
+        position: relative;
+    }
+
+    .current-item{
+        position: absolute;
+        background-color: crimson;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        padding: 1px 0 0 0;
+        border-radius: 50%;
+        top: -8px;
+        right: 10px;
+        font-size: 11px;
+    }
+
+    /* main */
+    .main-cart-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .left-cart-container{
+        flex: 1;
+        margin-left: 196px;
+    }
+
+    .cart-title{
+        font-size: 32px;
+        font-weight: 900;
+        margin: 56px 0 16px 188px;
+    }
+
+    /* boxes */
+    .icon{
+        width: 56px;
+        height: 56px;
+    }
+    .file-icon{
+        background-color: white;
+        padding: 8px;
+        border-radius: 25%;
+        width: 36px;
+        height: 36px;
+        margin-left: 16px;
+        margin-top: 24px;
+    }
+    .cart-box{
+        display: flex;
+        /* border: solid 2px gray; */
+        height: 226px;
+        width: 546px;
+        margin: 16px 32px;
+        border-radius: 16px;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        /* justify-content: space-around; */
+    }
+    .item-details{
+        background-color: rgb(255, 255, 255);
+    }
+    .item-container{
+        background-size: cover;
+        width: 156px;
+        height: 156px;
+        margin: 0 18px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    h5,p{
+        margin-left: 16px;
+        margin-top: 8px;
+        color: #fff;
+    }
+
+    .item-title{
+        color: #000;
+        margin: 8px 0;
+    }
+
+    .level-select{
+        display: flex;
+        align-items: center;
+    }
+
+    .del-icon{
+        width: 42px;
+        height: 42px;
+        margin: 0 24px;
+    }
+    .del-icon:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 5px lightgrey;
+        border-radius: 50%;
+    }
+    .dot{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: gray;
+        display: inline-block;
+        margin: .1rem;
+    }
+    .dot-green{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: rgb(0, 214, 175);
+        display: inline-block;
+        margin: .1rem;
+    }
+
+    .price{
+        margin-top: 16px;
+    }
+    .select-box-2{
+        cursor: pointer;
+        border: 1px solid rgb(0, 214, 175);
+        color: gray;
+    }
+    
+    /* right side */
+    .right-cart-container{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        box-shadow: 0px 0px 5px lightgray;
+        border-radius: 16px;
+        width: 545px;
+        height: 356px;
+        padding: 8px;
+        margin-top: 16px;
+        margin-right: 196px;
+        flex: 1;
+    }
+    .section-title{
+        margin: 16px 0 16px 32px;
+    }
+    .sub-price{
+        display: flex;
+        justify-content: space-between;
+        /* margin-right: 8px; */
+        margin: 8px 32px 8px 16px;
+    }
+    .sub-price>p{
+        color: #000;
+    }
+    .promo-code{
+        display: flex;
+        /* justify-content: space-around; */
+        align-items: center;
+        margin: 16px 32px 24px 16px;
+    }
+    .promo-code>img{
+        width: 24px;
+        height: 20px;
+        margin: 0 16px;
+    }
+    .promo-code>input{
+        width: 266px;
+        height: 48px;
+        background: transparent;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        /* box-shadow: 0px 0px 10px lightgray; */
+        margin-right: 16px;
+        padding: 8px;
+    }
+    .promo-code>button{
+        width: 156px;
+        height: 48px;
+        font-weight: 700;
+        border-radius: 16px;
+        border: solid 2px rgb(0, 214, 175);
+        color: rgb(71, 189, 165);
+    }
+
+    hr{
+        width: 90%;
+        align-self: center;
+        /* color: lightgrey; */
+        border: 1px solid lightgrey;
+        opacity: 0.75;
+    }
+
+    .total-pay{
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 32px;
+        align-items: center;
+    }
+    .total-pay>p{
+        margin: 0;
+        color: #000;
+    }
+    .total-pay>.total-price{
+        color: rgb(71, 189, 165);
+        font-size: 24px;
+        font-weight: 900;
+    }
+    .final-button{
+        margin: 8px 32px;
+        height: 48px;
+        border-radius: 16px;
+        background: rgb(0, 214, 175);
+        border: none;
+        box-shadow: 0px 0px 1px rgb(0, 214, 175);
+        font-size:16px;
+        font-weight: 700;
+    }
+    button:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 5px lightgrey;
+    }
+
+    /*dot function*/
+    /* #one{
+        display: none;
+    }
+    #two{
+        display: none;
+    }
+    #three{
+        display: none;
+    }
+    #four{
+        display: none;
+    } */
+    .show{
+        display: flex;
+    }
+    .hide{
+        display: none;
+    }
+
+
+    /*Custom Select box*/
+    /*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: inline-flex; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #fff;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: gray;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: green;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+</style>
+<script>
+    /*js for custom select box*/
+    const selected = document.querySelector(".selected");
+    const optionsContainer = document.querySelector(".options-container");
+
+    const optionsList = document.querySelectorAll(".option");
+
+    selected.addEventListener("click", () => {
+    optionsContainer.classList.toggle("active");
+    });
+
+    optionsList.forEach(o => {
+    o.addEventListener("click", () => {
+        selected.innerHTML = o.querySelector("label").innerHTML;
+        optionsContainer.classList.remove("active");
+    });
+    });
+
+
+    /*function*/
+    function onAlert(num){
+        alert(num)
+    }
+    function applyCode(){
+        alert("Promotion code Applied")
+        document.getElementById("code").value = "";
+    }
+   function showNum(){
+        let dot = document.getElementById("my-select").value;
+        changeDot(dot);
+    }
+    function showNum2(){
+        let dot = document.getElementById("my-select2").value;
+        changeDot(dot);
+    }
+    function changeDot(num){
+        switch(num){
+                case "1":
+            document.getElementById("one").setAttribute("class", "show");
+            document.getElementById("two").setAttribute("class", "hide");
+            document.getElementById("three").setAttribute("class", "hide");
+                break;
+            case "2":
+            document.getElementById("one").setAttribute("class", "hide");
+            document.getElementById("two").setAttribute("class", "show");
+            document.getElementById("three").setAttribute("class", "hide");
+                break;
+                case "3":
+            document.getElementById("one").setAttribute("class", "hide");
+            document.getElementById("two").setAttribute("class", "hide");
+            document.getElementById("three").setAttribute("class", "show");
+                break;
+                case "4":
+            document.getElementById("one-2").setAttribute("class", "show");
+            document.getElementById("two-2").setAttribute("class", "hide");
+            document.getElementById("three-2").setAttribute("class", "hide");
+            document.getElementById("four-2").setAttribute("class", "hide");
+                break;
+                case "5":
+                document.getElementById("one-2").setAttribute("class", "hide");
+            document.getElementById("two-2").setAttribute("class", "show");
+            document.getElementById("three-2").setAttribute("class", "hide");
+            document.getElementById("four-2").setAttribute("class", "hide");
+                break;
+                case "6":
+                document.getElementById("one-2").setAttribute("class", "hide");
+            document.getElementById("two-2").setAttribute("class", "hide");
+            document.getElementById("three-2").setAttribute("class", "show");
+            document.getElementById("four-2").setAttribute("class", "hide");
+                break;
+                case "7":
+                document.getElementById("one-2").setAttribute("class", "hide");
+            document.getElementById("two-2").setAttribute("class", "hide");
+            document.getElementById("three-2").setAttribute("class", "hide");
+            document.getElementById("four-2").setAttribute("class", "show");
+                break;
+                
+        }
+
+        var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+    }
+</script>
+</html>
